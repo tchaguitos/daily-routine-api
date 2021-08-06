@@ -1,0 +1,9 @@
+version: "3"
+services:
+  mongodb:
+    container_name: mongodb
+    image : mongo
+    volumes:
+      - ${MONGODB_VOLUME_URL}
+    ports:
+      - 27017:27017
